@@ -26,6 +26,8 @@
 
 **The Hello React App** is an app with React communication with APIs built in rails.
 
+Check the backend app consuming these APIs [hello_world_rails](https://github.com/patriciachrysy/hello_world_rails.git).
+
 ## 🛠 Built With <a name="built-with"></a>
 - ✅ Javascript
 - ✅ React JS
