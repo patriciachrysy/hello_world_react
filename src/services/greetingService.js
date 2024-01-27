@@ -1,11 +1,9 @@
 import http from '../http-common';
 
-const getGreeting = () => {
-    return http.get(`/message`);
-};
+const getGreeting = () => http.get('/message');
 
 const GreetingService = {
-    getGreeting
+  getGreeting,
 };
 
 export default GreetingService;
