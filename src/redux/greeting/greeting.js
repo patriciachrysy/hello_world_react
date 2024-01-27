@@ -6,7 +6,7 @@ const RETRIEVE_ASYNC_GREETING = 'greetingstore/greeting/RETRIVE_GREETING';
 const RETRIEVE_GREETING = 'greetingstore/greeting/RETRIVE_GREETING/fulfilled';
 
 const initialState = {
-    content: "loading..."
+  content: 'loading...',
 };
 
 export const retrieveGreeting = createAsyncThunk(
@@ -14,9 +14,8 @@ export const retrieveGreeting = createAsyncThunk(
   async () => {
     const res = await GreetingService.getGreeting();
     let randomGreeting = {};
-    console.log(res);
     if (res.data) {
-        randomGreeting = res.data;
+      randomGreeting = res.data;
     }
     return randomGreeting;
   },
