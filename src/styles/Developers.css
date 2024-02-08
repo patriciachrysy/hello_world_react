@@ -1,0 +1,12 @@
+.developers {
+    width: 80%;
+    height: 100%;
+    padding: 40px 0;
+}
+
+.developers-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}

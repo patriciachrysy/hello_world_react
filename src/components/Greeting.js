@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { retrieveGreeting } from '../redux/greeting/greeting';
+import React from 'react';
+import '../styles/Greeting.css';
 
 const Greeting = () => {
-  const greeting = useSelector((state) => state.greeting);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(retrieveGreeting());
-  }, [dispatch]);
-
   return (
-    <h1>{greeting.content}</h1>
+    <div className="welcome-screen">
+      <div className="welcome-content">
+        <h1>
+          Welcome to Web Developer booking App
+        </h1>
+      </div>
+    </div>
   );
 };
 
